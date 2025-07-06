@@ -2,7 +2,7 @@ const analyzeHealthClaim = async (text) => {
   setIsAnalyzing(true);
 
   try {
-    const API_KEY = 'AIzaSyCqfjpkqAOlCLgRIjQdku3Fh-001JQI6iE';
+    const API_KEY = 'AIzaSyA3J9Z1ptlKCGBRBsU3s3knQW8u2BrPGo0';
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
 
     const prompt = {
