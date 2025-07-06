@@ -17,5 +17,4 @@
     "eject": "react-scripts eject"
   }
 }
-Fix: Updated TypeScript version to match react-scripts
-
+Fix: JSON formatting issue
