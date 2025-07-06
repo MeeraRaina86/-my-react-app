@@ -1,8 +1,8 @@
 const analyzeHealthClaim = async (text) => {
   setIsAnalyzing(true);
-
+console.log("Using OpenAI Key:", import.meta.env.VITE_OPENAI_API_KEY);
   try {
-    const API_KEY = 'AIzaSyA3J9Z1ptlKCGBRBsU3s3knQW8u2BrPGo0'; //
+    const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
     const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 
     const response = await fetch(API_URL, {
