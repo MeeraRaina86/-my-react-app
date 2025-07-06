@@ -12,6 +12,7 @@ const HealthFactChecker = () => {
     
     try {
       // Replace 'YOUR_API_KEY' with your actual Gemini API key
+      console.log("🔑 Gemini API Key from ENV:", process.env.REACT_APP_GEMINI_API_KEY);
       const API_KEY = process.env.REACT_APP_GEMINI_API_KEY || 'demo-key';
       const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
       
