@@ -1,7 +1,7 @@
 const analyzeHealthClaim = async (text) => {
   setIsAnalyzing(true);
   try {
-    const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+   const API_KEY = "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";
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
